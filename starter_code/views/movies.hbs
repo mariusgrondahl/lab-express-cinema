@@ -1,0 +1,10 @@
+<div class="flex-container">
+  {{#each Movies}}
+    <a href="/movies/{{this._id}}">
+      <div class="flex-item" style="background: url({{this.image}}) center center no-repeat; background-size: cover;">
+        <h1>{{this.title}}</h1>
+        <div class="link"><a href="/movies/{{this._id}}">{{this.title}}</a></div>
+      </div>
+    </a>
+  {{/each}}
+</div>
