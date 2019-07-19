@@ -1,8 +1,13 @@
   <div class="flex-container">
-      {{#each Movies}}
       <div class="details-container">
-        <h1>{{this.title}}</p></h1>
-        <p>{{this.description}}</p>
-      </div>
-      {{/each}}
+        <h1>{{movie.title}}</p></h1>
+        <p>{{movie.description}}</p>
+
+        <h4>Showtimes:</h4>
+        <ul>
+          {{#each movie.showtimes}}
+            <li>{{this}}</li>
+          {{/each}}
+         </ul>
+        </div>
     </div>

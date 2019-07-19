@@ -4,7 +4,20 @@ body, html {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: #fff;
   background: #2d2d2d;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-left: 20px;
 }
 
 header{
@@ -32,9 +45,6 @@ header{
   }
 }
 
-a {
-  color: #00B7FF;
-}
 
 .flex-container{
   display: flex;
@@ -61,8 +71,9 @@ a {
       display: block;
       z-index: 1;
 
-      &::hover{
-        background: rgba(0,0,0, 0.7);
+      &:hover{
+        background: linear-gradient(-180deg, rgba(85,193,231,1) 0%, rgba(0,0,0,1) 100%);
+
       }
     }
 
@@ -75,7 +86,12 @@ a {
     font-weight: bold;
     font-size: 1.1rem;
     z-index: 3;
+    &:hover{
+      color: orange
+    }
   }
+
+
 
   h1{
     font-size: 1.3rem;

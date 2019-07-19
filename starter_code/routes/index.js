@@ -23,8 +23,9 @@ router.get('/movies', (req, res, next) => {
 /* Single Movie */
 router.get('/movies/:movieId', (req, res, next) => {
   Movie.findById(req.params.movieId)
-    .then(Movies => {
-      res.render('single-movie', {Movies});
+    .then(movie => {
+      debugger
+      res.render('single-movie', {movie});
 
     })
     .catch(error => {
